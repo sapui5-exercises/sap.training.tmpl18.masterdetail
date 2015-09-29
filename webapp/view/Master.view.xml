@@ -1,0 +1,43 @@
+<mvc:View   xmlns:mvc="sap.ui.core.mvc"
+	    	xmlns:core="sap.ui.core"
+		    xmlns="sap.m"
+	    	xmlns:semantic="sap.m.semantic"
+	    	controllerName="sap.training.exc18.masterdetail.controller.Master">
+	    	
+	 <!--
+		*  TO DO:
+		*  Setzen Sie den Modus der Liste (Attribut mode) abhängig von dem Device,
+		*  auf dem die Anwendung betrieben wird: Auf einem Phone soll None verwendet 
+		*  werden, ansonsten SingleSelectMaster.
+		*
+		*  Binden Sie das selectionChange Event der Liste an den Ereignisbehandler
+		*  onSelect.
+		*
+		*  Setzen Sie den Typ des ObjectListItems (Attribut type) ebenfalls abhängig
+		*  von dem Device, auf dem die Anwendung betrieben wird: Auf einem Phone
+		*  soll Active verwendet werden, ansonsten Inactive.
+		*  
+		*  Binden Sie das press Event des ObjectListItems ebenfalls an den Ereignisbehandler
+		*  onSelect.
+		-->	    	
+
+	<semantic:MasterPage title="{i18n>masterTitle}">
+		<semantic:content>
+			<List	id="list"
+					items="{/CarrierSet}"
+					busyIndicatorDelay="0"
+					growing="true"
+					growingThreshold="10"
+					growingScrollToLoad="true">
+			
+				<items>
+					<ObjectListItem
+							title="{Carrname}"
+							intro="{Carrid}">
+					</ObjectListItem>
+				</items>
+			</List>
+		</semantic:content>
+	</semantic:MasterPage>
+	
+</mvc:View>

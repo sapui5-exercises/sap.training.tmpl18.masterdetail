@@ -1,0 +1,16 @@
+<mvc:View
+		controllerName="sap.training.exc18.masterdetail.controller.App"
+		xmlns:mvc="sap.ui.core.mvc"
+		displayBlock="true"
+		xmlns="sap.m">
+		
+	 <!--
+		*  TO DO:
+		*  Fügen Sie hier das für die Anwendung benötigte Root-Element 
+		*  vom Typ sap.m.SplitApp ein.
+		*  Definieren Sie dabei als Id für die SplitApp den Wert,
+		*  der bei der Routing Konfiguration im Application Descriptor
+		*  bereits verwendet wird.
+		-->	
+	
+</mvc:View>
