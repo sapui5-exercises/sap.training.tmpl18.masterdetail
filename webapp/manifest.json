@@ -14,7 +14,9 @@
 			"TravelService": {
 				"uri": "/sap/opu/odata/sap/ZBC_TRAVEL_SRV/",
 				"type": "OData",
-				"settings": { "odataVersion": "2.0" }
+				"settings": {
+					"odataVersion": "2.0"
+				}
 			}
 		}
 	},
@@ -35,7 +37,11 @@
 		"rootView": "sap.training.exc18.masterdetail.view.App",
 		"dependencies": {
 			"minUI5Version": "1.30",
-			"libs": { "sap.ui.core": {}, "sap.m": {}, "sap.ui.layout": {} }
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
 		},
 		"models": {
 			"i18n": {
@@ -45,7 +51,10 @@
 				}
 			},
 			"": {
-				"dataSource": "TravelService"
+				"dataSource": "TravelService",
+				"settings": {
+					"disableHeadRequestForToken": true
+				}
 			}
 		},
 		"routing": {
@@ -101,4 +110,3 @@
 		}
 	}
 }
-
